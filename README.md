@@ -1,18 +1,16 @@
 # trugaBase
 ## Простая база для создания ботов Вконтакте
 
-База основана на модуле VK-Promise
-https://www.npmjs.com/package/VK-Promise
-и старенькой базе на vk-io от iBUYCHEAT
-https://github.com/iBUYCHEAT/INJBotSystem
+База основана на модуле [VK-Promise](https://www.npmjs.com/package/VK-Promise)
+и старенькой базе на vk-io от [iBUYCHEAT](https://github.com/iBUYCHEAT)
 
 ### Приготовления
 1. Устанавливаем NodeJS - https://nodejs.org/ (желательно последней версии)
 2. Заходим в консоль (или терминал) и прописываем следующие команды (по очереди):
-> npm install VK-Promise -g
-> npm install request -g
-> npm install https -g
-> npm install pm2 -g (необязателен к установке)
+* > npm install VK-Promise -g
+* > npm install request -g
+* > npm install https -g
+* > npm install pm2 -g (необязателен к установке)
 
 
 ### Настройка
@@ -40,7 +38,9 @@ vk = new VK("тут_токен"),
 1. Открываем консоль или терминал (если закрыли) и переходим к папке с ботом с помощью cd
 2. Пишем:
 > pm2 start index.js
+
 или
+
 > node index
 
 2. Бот запущен и готов к работе!
