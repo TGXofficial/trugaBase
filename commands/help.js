@@ -1,7 +1,7 @@
 const fs = require("fs")
 
 module.exports = {
-	r: /^\/(?:help|помощь)/i,
+	r: /^\/(?:help|помощь|команды)/i,
 	f: function (msg) {
 		msg.send("Все доступные команды:\n" + cmds.map(x => "📗 " + x.description).join("\n"));
 	},
