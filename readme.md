@@ -47,12 +47,12 @@ vk = new VK("тут_токен"),
 ```JavaScript
 // Можно подключить любой модуль/файл
 const fs = require("fs"); // один из примеров - FS
-const index = require("./index.js"); //подключили файл index.js из корня
+const index = require("../index.js"); //подключили файл index.js из корня
 
 // Экспортируем как модуль
 module.exports = {
 	r: /^\/test\s([^]+)/i,  // регулярное выражение, подробнее - regexp.com
-	f: function (msg, prms) { //функция
+	f: function (msg, com, prms) { //функция
 		if(prms == "привет") { //определяет, что написано после /test - "привет" или "test"
 			msg.reply("Привет!");
 		} else if(prms == "test") {
